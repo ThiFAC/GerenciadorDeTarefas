@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte personalizada Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Genrenciador de Tarefas</h1>
+    </header>
+
+    <!-- Conteudo principal da pagina -->
+    <main>
+        <!-- Formulário de cadastro de tarefa -->
+        <section>
+            <form id="formularioTarefa">
+                <input type="text" id="titulo" placeholder="Adicione sua tarefa aqui" required>
+                <textarea id="descricao" placeholder="Descrição" required></textarea>
+                <select id="prioridade">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+        </section>
+        <!-- Seção de busca -->
+        <section>
+            <input type="text" id="buscar" placeholder="Buscar tarefas...">
+        </section>
+        <!-- Lista de tarefas preenchidas via JavaScript -->
+        <section class="tarefas" id="tarefaLista"></section>
+    </main>
+    
+    <!-- Rodapé da página -->
+    <footer class="footer">
+    <p>Desenvolvido por: <strong>Thiago Felipe Andrade Cassemiro</strong> | RU: <strong>5186364</strong></p>
+    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
