@@ -49,6 +49,11 @@ form {
     gap: 10px;
 }
 
+form p {
+    font-size: 20px;
+    color: #333;
+}
+
 /* Inputs e botões */
 input, textarea, select, button {
     padding: 10px;
